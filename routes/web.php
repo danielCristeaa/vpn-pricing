@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main');
 });
+
+Route::get('/determineLocation', [App\Http\Controllers\MainController::class, 'determineLocation']);
