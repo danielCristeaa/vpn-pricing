@@ -25,6 +25,12 @@
         <div id="app">
             <clientinfo-component></clientinfo-component>
             <navbar-component></navbar-component>
+            <jumbotron-component
+                :title="'{{ $banner_title }}'"
+                :text="'{{$banner_text}}'"
+                :start-free-trial-text="'{{$banner_start_free_trial}}'"
+                :image="'{{$banner_image_path}}'"
+            ></jumbotron-component>
         </div>
     </body>
 </html>
