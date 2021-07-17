@@ -8,6 +8,9 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
@@ -31,6 +34,13 @@
                 :start-free-trial-text="'{{$banner_start_free_trial}}'"
                 :image="'{{$banner_image_path}}'"
             ></jumbotron-component>
+            <three-steps-component
+                :title="'{{ $section_one_title }}'"
+                :subtitle="'{{$section_one_text}}'"
+                :step_one_title="'{{$section_one_step_one}}'"
+                :step_two_title="'{{$section_one_step_two}}'"
+                :step_three_title="'{{$section_one_step_three}}'"
+            ></three-steps-component>
         </div>
     </body>
 </html>
