@@ -1,8 +1,8 @@
 <template>
-    <div class="row">
-        <div class="col-md-12">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
             <div id="section_two">
-                <h1>{{section_two_title}}</h1>
+                <h1><b>{{section_two_title}}</b></h1>
                 <p v-html="section_two_top_text"></p>
                 <img v-bind:src="section_two_image_path">
                 <p v-html="section_two_bottom_text"></p>
@@ -21,6 +21,8 @@ export default {
 <style scoped>
 #section_two{
     text-align: center;
+}
+.row{
     background-color: #F8F9FA;
 }
 </style>

@@ -37,7 +37,6 @@ export default {
 
 <style scoped>
 .container{
-    font-family: "Montserrat";
     text-align: center;
 }
 </style>

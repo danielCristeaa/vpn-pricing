@@ -6765,7 +6765,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#section_two[data-v-7832269f]{\n    text-align: center;\n    background-color: #F8F9FA;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#section_two[data-v-7832269f]{\n    text-align: center;\n}\n.row[data-v-7832269f]{\n    background-color: #F8F9FA;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6885,7 +6885,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.container[data-v-612c1eb9]{\n    font-family: \"Montserrat\";\n    text-align: center;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.container[data-v-612c1eb9]{\n    text-align: center;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39179,10 +39179,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row" }, [
-    _c("div", { staticClass: "col-md-12" }, [
+  return _c("div", { staticClass: "row justify-content-center" }, [
+    _c("div", { staticClass: "col-md-6" }, [
       _c("div", { attrs: { id: "section_two" } }, [
-        _c("h1", [_vm._v(_vm._s(_vm.section_two_title))]),
+        _c("h1", [_c("b", [_vm._v(_vm._s(_vm.section_two_title))])]),
         _vm._v(" "),
         _c("p", { domProps: { innerHTML: _vm._s(_vm.section_two_top_text) } }),
         _vm._v(" "),
