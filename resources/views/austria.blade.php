@@ -41,6 +41,12 @@
                 :step_two_title="'{{$section_one_step_two}}'"
                 :step_three_title="'{{$section_one_step_three}}'"
             ></three-steps-component>
+            <hamburger-component
+                :section_two_title="'{{$section_two_title}}'"
+                :section_two_top_text="'{{$section_two_top_text}}'"
+                :section_two_image_path="'{{$section_two_image_path}}'"
+                :section_two_bottom_text="'{{$section_two_bottom_text}}'"
+            ></hamburger-component>
         </div>
     </body>
 </html>

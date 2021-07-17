@@ -13,9 +13,9 @@ return [
     'section_one_step_three' => '3. Enjoy the best VPN in Austria',
 
     'section_two_title' => 'Your data is highly sought after',
-    'section_two_top_text' => 'The internet was meant to be free and open to anyone. But sadly, that’s not the case, with internet surveillance becoming the norm. Everything you do online is collected and stored. And Austria is no exception to this. The European Data Retention Directive has been a privacy nightmare for all European citizens. This threat has lurked over Austrian citizens for over a decade. And while Austrian authorities have been playing cat and mouse with its implementation, there is no guarantee of what the future holds.',
+    'section_two_top_text' => "The internet was meant to be free and open to anyone. But sadly, that’s not the case, with internet surveillance becoming the norm. Everything you do online is collected and stored. And Austria is no exception to this.<br><br> The European Data Retention Directive has been a privacy nightmare for all European citizens. This threat has lurked over Austrian citizens for over a decade.<br><br> And while Austrian authorities have been playing cat and mouse with its implementation, there is no guarantee of what the future holds.",
     'section_two_image_path' => '/assets/austria/section2_image.png',
-    'section_two_bottom_text' => 'However, let’s not forget that your data is being harvested with every site and social media page you frequent. Targeted ads have been a game changer for online platforms, which caused data to be collected by the bulk. Not to mention data breaches are becoming a worryingly common occurrence. Austrian businesses have also been targeted, as they usually don’t rely on cybersecurity as much as they should.',
+    'section_two_bottom_text' => 'However, let’s not forget that your data is being harvested with every site and social media page you frequent. Targeted ads have been a game changer for online platforms, which caused data to be collected by the bulk.<br><br> Not to mention data breaches are becoming a worryingly common occurrence. Austrian businesses have also been targeted, as they usually don’t rely on cybersecurity as much as they should.',
 
     'section_three_image_path' => '/assets/austria/section3_image',
     'section_three_title' => 'Stay safe on public Wi-Fis networks',

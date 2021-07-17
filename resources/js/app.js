@@ -24,6 +24,7 @@ Vue.component('navbar-component', require('./components/NavbarComponent.vue').de
 Vue.component('clientinfo-component', require('./components/ClientInfoComponent.vue').default);
 Vue.component('jumbotron-component', require('./components/JumbotronComponent.vue').default);
 Vue.component('three-steps-component', require('./components/ThreeStepsComponent.vue').default);
+Vue.component('hamburger-component', require('./components/HamburgerComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
