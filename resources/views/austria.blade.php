@@ -47,6 +47,11 @@
                 :section_two_image_path="'{{$section_two_image_path}}'"
                 :section_two_bottom_text="'{{$section_two_bottom_text}}'"
             ></hamburger-component>
+            <image-right-text-left-component
+                :section_three_image_path="'{{$section_three_image_path}}'"
+                :section_three_title="'{{$section_three_title}}'"
+                :section_three_text="'{{$section_three_text}}'"
+            ></image-right-text-left-component>
         </div>
     </body>
 </html>

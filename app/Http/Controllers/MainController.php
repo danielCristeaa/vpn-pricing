@@ -27,6 +27,10 @@ class MainController extends Controller
                 'section_two_top_text' => config('austria_vpn_details.section_two_top_text'),
                 'section_two_image_path' => config('austria_vpn_details.section_two_image_path'),
                 'section_two_bottom_text' => config('austria_vpn_details.section_two_bottom_text'),
+
+                'section_three_image_path' => config('austria_vpn_details.section_three_image_path'),
+                'section_three_title' => config('austria_vpn_details.section_three_title'),
+                'section_three_text' => config('austria_vpn_details.section_three_text'),
                 ]);
         }
 
