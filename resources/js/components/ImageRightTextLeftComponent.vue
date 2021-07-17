@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div class="col-md-2 offset-md-2">
+        <div class="col-md-2 offset-md-2 align-self-center">
             <img v-bind:src="section_three_image_path">
         </div>
         <div class="col-md-5 offset-md-1">

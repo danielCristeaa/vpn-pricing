@@ -26,6 +26,7 @@ Vue.component('jumbotron-component', require('./components/JumbotronComponent.vu
 Vue.component('three-steps-component', require('./components/ThreeStepsComponent.vue').default);
 Vue.component('hamburger-component', require('./components/HamburgerComponent.vue').default);
 Vue.component('image-right-text-left-component', require('./components/ImageRightTextLeftComponent.vue').default);
+Vue.component('image-left-text-right-component', require('./components/ImageLeftTextRightComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

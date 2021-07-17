@@ -52,6 +52,11 @@
                 :section_three_title="'{{$section_three_title}}'"
                 :section_three_text="'{{$section_three_text}}'"
             ></image-right-text-left-component>
+            <image-left-text-right-component
+                :section_four_image_path="'{{$section_four_image_path}}'"
+                :section_four_title="'{{$section_four_title}}'"
+                :section_four_text="'{{$section_four_text}}'"
+            ></image-left-text-right-component>
         </div>
     </body>
 </html>
