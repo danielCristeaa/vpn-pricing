@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [App\Http\Controllers\MainController::class, 'show']);
+Route::get('/austria', [App\Http\Controllers\MainController::class, 'showAustria']);
+Route::get('/premier_league', [App\Http\Controllers\MainController::class, 'showPremierLeague']);
 
 Route::get('/determineLocation', [App\Http\Controllers\MainController::class, 'determineLocation']);

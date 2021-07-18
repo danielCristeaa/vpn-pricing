@@ -14,7 +14,7 @@
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
-
+        <script src="https://kit.fontawesome.com/6fdc95440b.js" crossorigin="anonymous"></script>
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -57,6 +57,11 @@
                 :section_four_title="'{{$section_four_title}}'"
                 :section_four_text="'{{$section_four_text}}'"
             ></image-left-text-right-component>
+            <pricing-component
+                :one_month_price="{{$oneMonthPrice}}"
+                :one_year_price="'{{$oneYearPrice}}'"
+                :three_years_price="'{{$threeYearsPrice}}'"
+            ></pricing-component>
         </div>
     </body>
 </html>
