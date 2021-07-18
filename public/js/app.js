@@ -2006,7 +2006,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "ImageLeftTextRightComponent",
-  props: ['section_four_image_path', 'section_four_title', 'section_four_text']
+  props: ['image_path', 'title', 'text']
 });
 
 /***/ }),
@@ -2037,7 +2037,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "ImageRightTextLeftComponent",
-  props: ['section_three_image_path', 'section_three_title', 'section_three_text']
+  props: ['image_path', 'title', 'text']
 });
 
 /***/ }),
@@ -39480,16 +39480,16 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "col-md-2 offset-md-1 align-self-center" }, [
+      _c("img", { attrs: { src: _vm.image_path } })
+    ]),
+    _vm._v(" "),
     _c("div", { staticClass: "col-md-5 offset-md-2" }, [
-      _c("h3", [_c("b", [_vm._v(_vm._s(_vm.section_four_title))])]),
+      _c("h3", [_c("b", [_vm._v(_vm._s(_vm.title))])]),
       _vm._v(" "),
       _c("div", { attrs: { id: "separator" } }),
       _vm._v(" "),
-      _c("p", { domProps: { innerHTML: _vm._s(_vm.section_four_text) } })
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "col-md-2 offset-md-1 align-self-center" }, [
-      _c("img", { attrs: { src: _vm.section_four_image_path } })
+      _c("p", { domProps: { innerHTML: _vm._s(_vm.text) } })
     ])
   ])
 }
@@ -39517,16 +39517,16 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row" }, [
-    _c("div", { staticClass: "col-md-2 offset-md-2 align-self-center" }, [
-      _c("img", { attrs: { src: _vm.section_three_image_path } })
-    ]),
-    _vm._v(" "),
     _c("div", { staticClass: "col-md-5 offset-md-1" }, [
-      _c("h3", [_c("b", [_vm._v(_vm._s(_vm.section_three_title))])]),
+      _c("h3", [_c("b", [_vm._v(_vm._s(_vm.title))])]),
       _vm._v(" "),
       _c("div", { attrs: { id: "separator" } }),
       _vm._v(" "),
-      _c("p", { domProps: { innerHTML: _vm._s(_vm.section_three_text) } })
+      _c("p", { domProps: { innerHTML: _vm._s(_vm.text) } })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "col-md-2 offset-md-2 align-self-center" }, [
+      _c("img", { attrs: { src: _vm.image_path } })
     ])
   ])
 }

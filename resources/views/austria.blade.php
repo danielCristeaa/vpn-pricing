@@ -47,16 +47,16 @@
                 :section_two_image_path="'{{$section_two_image_path}}'"
                 :section_two_bottom_text="'{{$section_two_bottom_text}}'"
             ></hamburger-component>
-            <image-right-text-left-component
-                :section_three_image_path="'{{$section_three_image_path}}'"
-                :section_three_title="'{{$section_three_title}}'"
-                :section_three_text="'{{$section_three_text}}'"
-            ></image-right-text-left-component>
             <image-left-text-right-component
-                :section_four_image_path="'{{$section_four_image_path}}'"
-                :section_four_title="'{{$section_four_title}}'"
-                :section_four_text="'{{$section_four_text}}'"
+                :image_path="'{{$section_three_image_path}}'"
+                :title="'{{$section_three_title}}'"
+                :text="'{{$section_three_text}}'"
             ></image-left-text-right-component>
+            <image-right-text-left-component
+                :image_path="'{{$section_four_image_path}}'"
+                :title="'{{$section_four_title}}'"
+                :text="'{{$section_four_text}}'"
+            ></image-right-text-left-component>
             <pricing-component
                 :one_month_price="{{$oneMonthPrice}}"
                 :one_year_price="'{{$oneYearPrice}}'"
