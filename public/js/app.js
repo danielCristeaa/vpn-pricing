@@ -2248,10 +2248,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "PricingComponent",
   props: ['one_month_price', 'one_year_price', 'three_years_price'],
@@ -6851,7 +6847,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#section_two[data-v-7832269f]{\n    text-align: center;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#section_two[data-v-7832269f]{\r\n    text-align: center;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6875,7 +6871,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#separator[data-v-0afb8d56] {\n    width: 80px;\n    height: 4px;\n    background-color: #FFCC00;\n    margin-bottom: 10px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#separator[data-v-0afb8d56] {\r\n    width: 80px;\r\n    height: 4px;\r\n    background-color: #FFCC00;\r\n    margin-bottom: 10px;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6971,7 +6967,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.pricing-section{\n    min-height: 70vh;\n}\n.price-number{\n    font-size: 32px;\n    font-weight: 800;\n}\n.price-currency{\n    font-size: 18px;\n    font-weight: 900;\n    vertical-align: top;\n}\n.regular-button{\n    color: black;\n    background-color: transparent;\n    border: 2px black solid;\n    font-weight: bold !important;\n}\n.special-button{\n    background-color: #4ba920!important;\n    color: white;\n    font-weight: bold !important;\n}\n@media only screen and (min-width: 768px) {\n.special-card{\n        height: 250px;\n        width: 18rem;\n}\n.regular-card {\n        margin-top: 20px;\n        width: 18rem;\n}\n}\n.badge {\n    font-weight: 800;\n    font-size: 14px;\n    background-color: #ecf6e8;\n    color: #4ba920;\n    min-width: 40%;\n    min-height: 12%;\n    text-align: center;\n    border-radius: 100px;\n    line-height: 1.5em;\n    margin-bottom: 1em;\n}\n.tooltip-head{\n    font-weight: bold;\n    font-style: normal !important;\n    color: #EC5049;\n    background: #FDEDEC;\n    padding: 10px 10px 5px;\n    border-radius: 4px 4px 0 0;\n    text-align: center;\n    margin-bottom: -2px;\n    width: 18rem;\n}\n.tooltip-head .glyphicon{\n    font-size: 12px;\n    vertical-align: bottom;\n}\n.tooltip-inner{\n    color: #EC5049;\n    background: #FDEDEC;\n    width: 18rem;\n    max-width: none;\n    padding: 0;\n}\n.arrow {\n    display: none !important;\n}\na.custom-tooltip, a.custom-tooltip:hover, a.custom-tooltip:focus, a.custom-tooltip:active {\n    text-decoration: none;\n    color: inherit;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.pricing-section{\n    min-height: 70vh;\n}\n.price-number{\n    font-size: 32px;\n    font-weight: 800;\n}\n.price-currency{\n    font-size: 18px;\n    font-weight: 900;\n    vertical-align: top;\n}\n.regular-button{\n    color: black;\n    background-color: transparent;\n    border: 2px black solid;\n    font-weight: bold !important;\n}\n.special-button{\n    background-color: #4ba920!important;\n    color: white;\n    font-weight: bold !important;\n}\n@media only screen and (min-width: 768px) {\n.special-card{\n        height: 250px;\n        width: 18rem;\n}\n.regular-card {\n        margin-top: 20px;\n        width: 18rem;\n}\n}\n.badge {\n    font-weight: 800;\n    font-size: 14px;\n    background-color: #ecf6e8;\n    color: #4ba920;\n    min-width: 40%;\n    min-height: 12%;\n    text-align: center;\n    border-radius: 100px;\n    line-height: 1.5em;\n    margin-bottom: 1em;\n}\n.tooltip {\n    margin-top: 40px;\n}\n.tooltip-head{\n    font-weight: bold;\n    font-style: normal !important;\n    color: #EC5049;\n    background: #FDEDEC;\n    padding: 10px 10px 5px;\n    border-radius: 4px 4px 0 0;\n    text-align: center;\n    margin-bottom: -2px;\n    width: 18rem;\n    border-top: 2px solid #EC5049;\n    border-left: 2px solid #EC5049;\n    border-right: 2px solid #EC5049;\n}\n.tooltip-head .glyphicon{\n    font-size: 12px;\n    vertical-align: bottom;\n}\n.tooltip-inner{\n    color: #EC5049;\n    background: #FDEDEC;\n    border-left: 2px solid #EC5049;\n    border-right: 2px solid #EC5049;\n    border-bottom: 2px solid #EC5049;\n    width: 18rem;\n    max-width: none;\n    padding: 0;\n}\n.arrow {\n    display: none !important;\n}\na.custom-tooltip, a.custom-tooltip:hover, a.custom-tooltip:focus, a.custom-tooltip:active {\n    text-decoration: none;\n    color: inherit;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39786,50 +39782,34 @@ var render = function() {
     _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "row justify-content-center" }, [
-      _c(
-        "a",
-        {
-          staticClass: "custom-tooltip",
-          attrs: {
-            href: "#",
-            "data-toggle": "tooltip",
-            "data-placement": "bottom",
-            rel: "tooltip"
-          }
-        },
-        [
-          _c("div", { staticClass: "col-md-auto" }, [
-            _c("div", { staticClass: "card text-center regular-card" }, [
-              _c("div", { staticClass: "card-body" }, [
-                _vm._m(1),
-                _vm._v(" "),
-                _c("div", [
-                  _c("span", { staticClass: "price-number" }, [
-                    _vm._v(_vm._s(_vm.one_month_price))
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "price-currency" }, [_vm._v(" €")]),
-                  _vm._v(
-                    "\n                            /mo\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", [
-                  _c("small", { staticClass: "card-text" }, [
-                    _vm._v(
-                      "Billed " + _vm._s(_vm.one_month_price) + " € every month"
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _vm._m(2),
-                _vm._v(" "),
-                _vm._m(3)
+      _c("div", { staticClass: "col-md-auto" }, [
+        _c("div", { staticClass: "card text-center regular-card" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _vm._m(1),
+            _vm._v(" "),
+            _c("div", [
+              _c("span", { staticClass: "price-number" }, [
+                _vm._v(_vm._s(_vm.one_month_price))
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "price-currency" }, [_vm._v(" €")]),
+              _vm._v("\n                        /mo\n                    ")
+            ]),
+            _vm._v(" "),
+            _c("div", [
+              _c("small", { staticClass: "card-text" }, [
+                _vm._v(
+                  "Billed " + _vm._s(_vm.one_month_price) + " € every month"
+                )
               ])
-            ])
+            ]),
+            _vm._v(" "),
+            _vm._m(2),
+            _vm._v(" "),
+            _vm._m(3)
           ])
-        ]
-      ),
+        ])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-md-auto" }, [
         _c("div", { staticClass: "card text-center special-card" }, [
@@ -39864,52 +39844,34 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "custom-tooltip",
-          attrs: {
-            href: "#",
-            "data-toggle": "tooltip",
-            "data-placement": "bottom",
-            rel: "tooltip"
-          }
-        },
-        [
-          _c("div", { staticClass: "col-md-auto" }, [
-            _c("div", { staticClass: "card text-center regular-card" }, [
-              _c("div", { staticClass: "card-body" }, [
-                _vm._m(7),
-                _vm._v(" "),
-                _c("div", [
-                  _c("span", { staticClass: "price-number" }, [
-                    _vm._v(_vm._s(_vm.one_year_price))
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "price-currency" }, [_vm._v(" €")]),
-                  _vm._v(
-                    "\n                            /mo\n                        "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", [
-                  _c("small", { staticClass: "card-text" }, [
-                    _vm._v(
-                      "Billed " +
-                        _vm._s(_vm.oneYearTotalPrice) +
-                        " € every year"
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _vm._m(8),
-                _vm._v(" "),
-                _vm._m(9)
+      _c("div", { staticClass: "col-md-auto" }, [
+        _c("div", { staticClass: "card text-center regular-card" }, [
+          _c("div", { staticClass: "card-body" }, [
+            _vm._m(7),
+            _vm._v(" "),
+            _c("div", [
+              _c("span", { staticClass: "price-number" }, [
+                _vm._v(_vm._s(_vm.one_year_price))
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "price-currency" }, [_vm._v(" €")]),
+              _vm._v("\n                        /mo\n                    ")
+            ]),
+            _vm._v(" "),
+            _c("div", [
+              _c("small", { staticClass: "card-text" }, [
+                _vm._v(
+                  "Billed " + _vm._s(_vm.oneYearTotalPrice) + " € every year"
+                )
               ])
-            ])
+            ]),
+            _vm._v(" "),
+            _vm._m(8),
+            _vm._v(" "),
+            _vm._m(9)
           ])
-        ]
-      )
+        ])
+      ])
     ]),
     _vm._v(" "),
     _vm._m(10)
@@ -39935,9 +39897,19 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("a", { staticClass: "btn regular-button", attrs: { href: "#" } }, [
-        _vm._v("Get 1 month plan")
-      ])
+      _c(
+        "a",
+        {
+          staticClass: "btn regular-button custom-tooltip",
+          attrs: {
+            href: "#",
+            "data-toggle": "tooltip",
+            "data-placement": "bottom",
+            rel: "tooltip"
+          }
+        },
+        [_vm._v("Get 1 month plan")]
+      )
     ])
   },
   function() {
@@ -39987,9 +39959,19 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("a", { staticClass: "btn regular-button", attrs: { href: "#" } }, [
-        _vm._v("Get 1 year plan")
-      ])
+      _c(
+        "a",
+        {
+          staticClass: "btn regular-button custom-tooltip",
+          attrs: {
+            href: "#",
+            "data-toggle": "tooltip",
+            "data-placement": "bottom",
+            rel: "tooltip"
+          }
+        },
+        [_vm._v("Get 1 year plan")]
+      )
     ])
   },
   function() {
@@ -40007,7 +39989,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-3 offset-md-5" }, [
+      _c("div", { staticClass: "col-md-3 offset-md-5 offset-3" }, [
         _c("small", [_vm._v("*All amounts shown are in Euros")])
       ])
     ])

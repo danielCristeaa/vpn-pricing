@@ -4,29 +4,27 @@
             <h1><b>Choose the plan that works for you</b></h1>
         </div>
         <div class="row justify-content-center">
-            <a href="#" class="custom-tooltip" data-toggle="tooltip" data-placement="bottom" rel="tooltip">
-                <div class="col-md-auto">
-                    <div class="card text-center regular-card">
-                        <div class="card-body">
-                            <p class="card-text"><b>1 Month</b></p>
-                            <div>
-                                <span class="price-number">{{one_month_price}}</span>
-                                <span class="price-currency">&nbsp;€</span>
-                                /mo
-                            </div>
-                            <div>
-                                <small class="card-text">Billed {{one_month_price}} € every month</small>
-                            </div>
-                            <div>
-                                <a href="#" class="btn regular-button">Get 1 month plan</a>
-                            </div>
-                            <div>
-                                <small class="card-text">14-day money back guarantee</small>
-                            </div>
+            <div class="col-md-auto">
+                <div class="card text-center regular-card">
+                    <div class="card-body">
+                        <p class="card-text"><b>1 Month</b></p>
+                        <div>
+                            <span class="price-number">{{one_month_price}}</span>
+                            <span class="price-currency">&nbsp;€</span>
+                            /mo
+                        </div>
+                        <div>
+                            <small class="card-text">Billed {{one_month_price}} € every month</small>
+                        </div>
+                        <div>
+                            <a href="#" class="btn regular-button custom-tooltip" data-toggle="tooltip" data-placement="bottom" rel="tooltip">Get 1 month plan</a>
+                        </div>
+                        <div>
+                            <small class="card-text">14-day money back guarantee</small>
                         </div>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="col-md-auto">
                 <div class="card text-center special-card">
                     <div class="card-body">
@@ -49,32 +47,30 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="custom-tooltip" data-toggle="tooltip" data-placement="bottom" rel="tooltip">
-                <div class="col-md-auto">
-                    <div class="card text-center regular-card">
-                        <div class="card-body">
-                            <p class="card-text"><b>1 Year</b></p>
-                            <div>
-                                <span class="price-number">{{ one_year_price }}</span>
-                                <span class="price-currency">&nbsp;€</span>
-                                /mo
-                            </div>
-                            <div>
-                                <small class="card-text">Billed {{ oneYearTotalPrice }} € every year</small>
-                            </div>
-                            <div>
-                                <a href="#" class="btn regular-button">Get 1 year plan</a>
-                            </div>
-                            <div>
-                                <small class="card-text">45-day money back guarantee</small>
-                            </div>
+            <div class="col-md-auto">
+                <div class="card text-center regular-card">
+                    <div class="card-body">
+                        <p class="card-text"><b>1 Year</b></p>
+                        <div>
+                            <span class="price-number">{{ one_year_price }}</span>
+                            <span class="price-currency">&nbsp;€</span>
+                            /mo
+                        </div>
+                        <div>
+                            <small class="card-text">Billed {{ oneYearTotalPrice }} € every year</small>
+                        </div>
+                        <div>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" rel="tooltip" class="btn regular-button custom-tooltip">Get 1 year plan</a>
+                        </div>
+                        <div>
+                            <small class="card-text">45-day money back guarantee</small>
                         </div>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
         <div class="row">
-            <div class="col-md-3 offset-md-5">
+            <div class="col-md-3 offset-md-5 offset-3">
                 <small>*All amounts shown are in Euros</small>
             </div>
         </div>
@@ -155,7 +151,9 @@ export default {
     line-height: 1.5em;
     margin-bottom: 1em;
 }
-
+.tooltip {
+    margin-top: 40px;
+}
 .tooltip-head{
     font-weight: bold;
     font-style: normal !important;
@@ -166,6 +164,9 @@ export default {
     text-align: center;
     margin-bottom: -2px;
     width: 18rem;
+    border-top: 2px solid #EC5049;
+    border-left: 2px solid #EC5049;
+    border-right: 2px solid #EC5049;
 }
 .tooltip-head .glyphicon{
     font-size: 12px;
@@ -174,6 +175,9 @@ export default {
 .tooltip-inner{
     color: #EC5049;
     background: #FDEDEC;
+    border-left: 2px solid #EC5049;
+    border-right: 2px solid #EC5049;
+    border-bottom: 2px solid #EC5049;
     width: 18rem;
     max-width: none;
     padding: 0;
