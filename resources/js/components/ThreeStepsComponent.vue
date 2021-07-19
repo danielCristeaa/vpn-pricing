@@ -7,21 +7,21 @@
                 <div>
                     <img src="/assets/step_one.png">
                     <p class="font-weight-bold" v-html="step_one_title"></p>
-                    <p class="subtext" v-if="step_one_text">{{step_one_text}}</p>
+                    <p class="subtext" v-if="step_one_text" v-html="step_one_text"></p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div>
                     <img src="/assets/step_two.png">
                     <p class="font-weight-bold" v-html="step_two_title"></p>
-                    <p class="subtext" v-if="step_two_text">{{step_two_text}}</p>
+                    <p class="subtext" v-if="step_two_text" v-html="step_two_text"></p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div>
                     <img src="/assets/step_three.png">
                     <p class="font-weight-bold" v-html="step_three_title"></p>
-                    <p class="subtext" v-if="step_three_text">{{step_three_text}}</p>
+                    <p class="subtext" v-if="step_three_text" v-html="step_three_text"></p>
                 </div>
             </div>
         </div>

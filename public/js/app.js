@@ -39881,9 +39881,10 @@ var render = function() {
           }),
           _vm._v(" "),
           _vm.step_one_text
-            ? _c("p", { staticClass: "subtext" }, [
-                _vm._v(_vm._s(_vm.step_one_text))
-              ])
+            ? _c("p", {
+                staticClass: "subtext",
+                domProps: { innerHTML: _vm._s(_vm.step_one_text) }
+              })
             : _vm._e()
         ])
       ]),
@@ -39898,9 +39899,10 @@ var render = function() {
           }),
           _vm._v(" "),
           _vm.step_two_text
-            ? _c("p", { staticClass: "subtext" }, [
-                _vm._v(_vm._s(_vm.step_two_text))
-              ])
+            ? _c("p", {
+                staticClass: "subtext",
+                domProps: { innerHTML: _vm._s(_vm.step_two_text) }
+              })
             : _vm._e()
         ])
       ]),
@@ -39915,9 +39917,10 @@ var render = function() {
           }),
           _vm._v(" "),
           _vm.step_three_text
-            ? _c("p", { staticClass: "subtext" }, [
-                _vm._v(_vm._s(_vm.step_three_text))
-              ])
+            ? _c("p", {
+                staticClass: "subtext",
+                domProps: { innerHTML: _vm._s(_vm.step_three_text) }
+              })
             : _vm._e()
         ])
       ])

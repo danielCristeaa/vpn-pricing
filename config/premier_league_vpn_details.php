@@ -9,7 +9,7 @@ return [
     'section_one_title' => 'Kick-off your stream in 3 simple steps',
     'section_one_text' => '',
     'section_one_step_one' => '1. Become a Ghostie',
-    'section_one_step_one_subtext' => 'It’s quick & easy',
+    'section_one_step_one_subtext' => '<a href="#">It’s quick & easy</a>',
     'section_one_step_two' => '2. Launch CyberGhost VPN',
     'section_one_step_two_subtext' => 'Connect to a VPN server from Europe',
     'section_one_step_three' => '3. Fire up Eurosport Player',

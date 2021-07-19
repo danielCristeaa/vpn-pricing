@@ -8,7 +8,7 @@ return [
 
     'section_one_title' => 'How to protect your data with the best VPN for Austria',
     'section_one_text' => '3 quick steps and you’re ready to go',
-    'section_one_step_one' => '1. Sign up to become<br> a Ghostie',
+    'section_one_step_one' => '<a href="#">1. Sign up to become<br> a Ghostie</a>',
     'section_one_step_two' => '2. Download & install<br> CyberGhost VPN',
     'section_one_step_three' => '3. Enjoy the best VPN<br> in Austria',
 
