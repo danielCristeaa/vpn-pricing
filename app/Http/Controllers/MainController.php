@@ -136,7 +136,7 @@ class MainController extends Controller
      */
     public function determineLocation(){
         $userIP = $_SERVER['REMOTE_ADDR'];
-        if($userIP == '127.0.0.1'){ //if accessed from localhost, localhost as the country
+        if($userIP == '127.0.0.1'){ //if accessed from localhost, return localhost as the country
             return response()->json(['status' => 'success', 'country' => 'localhost']);
         }
 
