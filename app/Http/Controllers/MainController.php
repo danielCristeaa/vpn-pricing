@@ -8,15 +8,7 @@ use Illuminate\Support\Facades\Http;
 
 class MainController extends Controller
 {
-    public function showAustria(Request $request) {
-        if($request->input('source') && array_key_exists('source', $_COOKIE) == false) {
-            setcookie('source', $request->input('source'), 0, '/');
-        }
-
-        if($request->input('campaign') && array_key_exists('campaign', $_COOKIE) == false) {
-            setcookie('campaign', $request->input('campaign'), 0, '/');
-        }
-
+    private function setCookiesAndPrices(Request $request) {
         if(strpos($_SERVER['HTTP_USER_AGENT'], 'Windows') !== false) {
             $oneMonthPrice = config('vpn_prices.windows_price_one_month');
             $oneYearPrice = config('vpn_prices.windows_price_one_year');
@@ -28,16 +20,29 @@ class MainController extends Controller
             $threeYearsPrice = config('vpn_prices.linux_price_three_years');
         }
 
+        if($request->input('source') && array_key_exists('source', $_COOKIE) == false) {
+            setcookie('source', $request->input('source'), 0, '/');
+        }
+
+        if($request->input('campaign') && array_key_exists('campaign', $_COOKIE) == false) {
+            setcookie('campaign', $request->input('campaign'), 0, '/');
+        }
+
         if($request->input('voucher')) {
             $queryVoucher = $request->input('voucher');
             if(config()->has("vouchers.$queryVoucher")) {
                 $oneMonthPrice = $oneMonthPrice - (config("vouchers.$queryVoucher") / 100);
                 $oneYearPrice = $oneYearPrice - (config("vouchers.$queryVoucher") / 100);
                 $threeYearsPrice = $threeYearsPrice - (config("vouchers.$queryVoucher") / 100);
-
                 setcookie('voucher', $queryVoucher, 0, '/');
             }
         }
+
+        return [$oneMonthPrice, $oneYearPrice, $threeYearsPrice];
+    }
+
+    public function showAustria(Request $request) {
+        $prices = $this->setCookiesAndPrices($request);
 
         return view('austria', [
             'banner_image_path' => config('austria_vpn_details.banner_image_path'),
@@ -64,43 +69,15 @@ class MainController extends Controller
             'section_four_title' => config('austria_vpn_details.section_four_title'),
             'section_four_text' => config('austria_vpn_details.section_four_text'),
 
-            'oneMonthPrice' => $oneMonthPrice,
-            'oneYearPrice' => $oneYearPrice,
-            'threeYearsPrice' => $threeYearsPrice
-            ]);
+            'oneMonthPrice' => $prices[0],
+            'oneYearPrice' => $prices[1],
+            'threeYearsPrice' => $prices[2]
+        ]);
 
     }
 
     public function showPremierLeague(Request $request) {
-        if($request->input('source') && array_key_exists('source', $_COOKIE) == false) {
-            setcookie('source', $request->input('source'), 0, '/');
-        }
-
-        if($request->input('campaign') && array_key_exists('campaign', $_COOKIE) == false) {
-            setcookie('campaign', $request->input('campaign'), 0, '/');
-        }
-
-        if(strpos($_SERVER['HTTP_USER_AGENT'], 'Windows') !== false) {
-            $oneMonthPrice = config('vpn_prices.windows_price_one_month');
-            $oneYearPrice = config('vpn_prices.windows_price_one_year');
-            $threeYearsPrice = config('vpn_prices.windows_price_three_years');
-        }
-        else {
-            $oneMonthPrice = config('vpn_prices.linux_price_one_month');
-            $oneYearPrice = config('vpn_prices.linux_price_one_year');
-            $threeYearsPrice = config('vpn_prices.linux_price_three_years');
-        }
-
-        if($request->input('voucher')) {
-            $queryVoucher = $request->input('voucher');
-            if(config()->has("vouchers.$queryVoucher")) {
-                $oneMonthPrice = $oneMonthPrice - (config("vouchers.$queryVoucher") / 100);
-                $oneYearPrice = $oneYearPrice - (config("vouchers.$queryVoucher") / 100);
-                $threeYearsPrice = $threeYearsPrice - (config("vouchers.$queryVoucher") / 100);
-
-                setcookie('voucher', $queryVoucher, 0, '/');
-            }
-        }
+        $prices = $this->setCookiesAndPrices($request);
 
         return view('premier_league', [
             'banner_image_path' => config('premier_league_vpn_details.banner_image_path'),
@@ -130,9 +107,9 @@ class MainController extends Controller
             'section_four_title' => config('premier_league_vpn_details.section_four_title'),
             'section_four_text' => config('premier_league_vpn_details.section_four_text'),
 
-            'oneMonthPrice' => $oneMonthPrice,
-            'oneYearPrice' => $oneYearPrice,
-            'threeYearsPrice' => $threeYearsPrice
+            'oneMonthPrice' => $prices[0],
+            'oneYearPrice' => $prices[1],
+            'threeYearsPrice' => $prices[2]
         ]);
 
     }
