@@ -1,26 +1,26 @@
 <template>
-    <div class="container">
-        <h1><b>{{title}}</b></h1>
+    <div class="container pv-md">
+        <h1 class="title">{{title}}</h1>
         <p>{{subtitle}}</p>
         <div class="row">
             <div class="col-md-4">
                 <div>
                     <img src="/assets/step_one.png">
-                    <p><b>{{step_one_title}}</b></p>
+                    <p class="font-weight-bold" v-html="step_one_title"></p>
                     <p class="subtext" v-if="step_one_text">{{step_one_text}}</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div>
                     <img src="/assets/step_two.png">
-                    <p><b>{{step_two_title}}</b></p>
+                    <p class="font-weight-bold" v-html="step_two_title"></p>
                     <p class="subtext" v-if="step_two_text">{{step_two_text}}</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div>
                     <img src="/assets/step_three.png">
-                    <p><b>{{step_three_title}}</b></p>
+                    <p class="font-weight-bold" v-html="step_three_title"></p>
                     <p class="subtext" v-if="step_three_text">{{step_three_text}}</p>
                 </div>
             </div>
@@ -38,5 +38,8 @@ export default {
 <style scoped>
 .container{
     text-align: center;
+}
+.title {
+    font-weight: bold;
 }
 </style>

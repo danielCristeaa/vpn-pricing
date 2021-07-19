@@ -1,5 +1,5 @@
 <template>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mr-0 pt-5 pb-5">
         <div class="col-md-6">
             <div id="section_two">
                 <h1><b>{{section_two_title}}</b></h1>
@@ -21,8 +21,5 @@ export default {
 <style scoped>
 #section_two{
     text-align: center;
-}
-.row{
-    background-color: #F8F9FA;
 }
 </style>

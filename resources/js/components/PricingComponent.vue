@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class=" pricing-section container pt-5 pb-5">
         <div class="title text-center">
             <h1><b>Choose the plan that works for you</b></h1>
         </div>
@@ -94,21 +94,23 @@ export default {
     mounted() {
         this.oneYearTotalPrice = Math.round(this.one_year_price * 12)
         this.threeYearsTotalPRice = Math.round(this.three_years_price * 12 * 3)
+
+        $(document).ready(function(){
+            $('[rel=tooltip]').tooltip({
+                html: true,
+                placement: 'bottom',
+                template : '<div class="tooltip"><div class="arrow"></div><div class="tooltip-head"><p><i class="fa fa-info-circle"></i> IMPORTANT!</p></div><div class="tooltip-inner"></div></div>',
+                title: 'The <b>3 YEARS</b> plan includes <b>the biggest savings</b> and <b>is fully refundable for 45 days.</b>',
+            });
+        });
     }
 }
-$(document).ready(function(){
-    $('[rel=tooltip]').tooltip({
-        html: true,
-        placement: 'bottom',
-        template : '<div class="tooltip"><div class="arrow"></div><div class="tooltip-head"><p><i class="fa fa-info-circle"></i> IMPORTANT!</p></div><div class="tooltip-inner"></div></div>',
-        title: 'The <b>3 YEARS</b> plan includes <b>the biggest savings</b> and <b>is fully refundable for 45 days.</b>',
-    });
-});
+
 </script>
 
 <style>
-.container{
-    height: 60vh;
+.pricing-section{
+    min-height: 70vh;
 }
 .price-number{
     font-size: 32px;
@@ -150,7 +152,7 @@ $(document).ready(function(){
     min-height: 12%;
     text-align: center;
     border-radius: 100px;
-    line-height: 1em;
+    line-height: 1.5em;
     margin-bottom: 1em;
 }
 

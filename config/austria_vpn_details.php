@@ -8,9 +8,9 @@ return [
 
     'section_one_title' => 'How to protect your data with the best VPN for Austria',
     'section_one_text' => '3 quick steps and you’re ready to go',
-    'section_one_step_one' => '1. Sign up to become a Ghostie',
-    'section_one_step_two' => '2. Download & install CyberGhost VPN',
-    'section_one_step_three' => '3. Enjoy the best VPN in Austria',
+    'section_one_step_one' => '1. Sign up to become<br> a Ghostie',
+    'section_one_step_two' => '2. Download & install<br> CyberGhost VPN',
+    'section_one_step_three' => '3. Enjoy the best VPN<br> in Austria',
 
     'section_two_title' => 'Your data is highly sought after',
     'section_two_top_text' => 'The internet was meant to be free and open to anyone. But sadly, that’s not the case, with internet surveillance becoming the norm. Everything you do online is collected and stored. And Austria is no exception to this.<br><br> The European Data Retention Directive has been a privacy nightmare for all European citizens. This threat has lurked over Austrian citizens for over a decade.<br><br> And while Austrian authorities have been playing cat and mouse with its implementation, there is no guarantee of what the future holds.',

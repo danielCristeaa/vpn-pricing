@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="row mr-0 pt-5 pb-5">
         <div class="col-md-5 offset-md-1">
             <h3><b>{{title}}</b></h3>
             <div id="separator"></div>

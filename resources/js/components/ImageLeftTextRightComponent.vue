@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="row mr-0 pt-5 pb-5">
         <div class="col-md-2 offset-md-1 align-self-center">
             <img v-bind:src="image_path">
         </div>
@@ -25,8 +25,4 @@ export default {
     background-color: #FFCC00;
     margin-bottom: 10px;
 }
-.row{
-    background-color: #F8F9FA;
-}
-
 </style>

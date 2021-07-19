@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
@@ -46,6 +47,7 @@
                 :section_two_top_text="'{{$section_two_top_text}}'"
                 :section_two_image_path="'{{$section_two_image_path}}'"
                 :section_two_bottom_text="'{{$section_two_bottom_text}}'"
+                style="background-color: #F8F9FA;"
             ></hamburger-component>
             <image-left-text-right-component
                 :image_path="'{{$section_three_image_path}}'"
@@ -56,6 +58,7 @@
                 :image_path="'{{$section_four_image_path}}'"
                 :title="'{{$section_four_title}}'"
                 :text="'{{$section_four_text}}'"
+                style="background-color: #F8F9FA;"
             ></image-right-text-left-component>
             <pricing-component
                 :one_month_price="{{$oneMonthPrice}}"
