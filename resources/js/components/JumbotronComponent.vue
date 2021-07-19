@@ -1,5 +1,12 @@
 <template>
-    <div class="jumbotron" v-bind:style="{ 'background-image': 'url(' + image + ')' }">
+    <div class="jumbotron pt-2" v-bind:style="{ 'background-image': 'url(' + image + ')' }">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a href="#">VPN Insights</a></li>
+                <li class="breadcrumb-item" aria-current="page">Features</li>
+            </ol>
+        </nav>
         <div class="container text-left">
             <div class="row">
                 <div class="col-12 pt-4">
@@ -7,7 +14,9 @@
                     <p class="lead">{{text}}</p>
                     <div class="get-vpn pt-5">
                         <a class="btn btn-lg" href="#" role="button"><b>GET CyberGhost VPN</b></a>
-                        <p><u>{{startFreeTrialText}}</u></p>
+                        <div>
+                            <a href="#" style="color: white; text-decoration: underline;">{{startFreeTrialText}}</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -38,5 +47,14 @@ export default {
     float: left;
     display: block;
     text-align: center;
+}
+.breadcrumb {
+    background-color: transparent;
+    padding: 2px 15px !important;
+    font-size: 12px;
+}
+li a{
+    text-decoration: none !important;
+    color: white;
 }
 </style>

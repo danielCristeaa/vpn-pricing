@@ -2070,6 +2070,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "JumbotronComponent",
   props: ['image', 'title', 'text', 'startFreeTrialText']
@@ -6918,7 +6927,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.jumbotron[data-v-3378c1dc] {\n    height: 500px;\n    color: white;\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center center;\n    border-radius: 0;\n}\n.btn[data-v-3378c1dc]{\n    background-color: #FFCC00;\n}\n.get-vpn[data-v-3378c1dc] {\n    float: left;\n    display: block;\n    text-align: center;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.jumbotron[data-v-3378c1dc] {\n    height: 500px;\n    color: white;\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center center;\n    border-radius: 0;\n}\n.btn[data-v-3378c1dc]{\n    background-color: #FFCC00;\n}\n.get-vpn[data-v-3378c1dc] {\n    float: left;\n    display: block;\n    text-align: center;\n}\n.breadcrumb[data-v-3378c1dc] {\n    background-color: transparent;\n    padding: 2px 15px !important;\n    font-size: 12px;\n}\nli a[data-v-3378c1dc]{\n    text-decoration: none !important;\n    color: white;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39510,10 +39519,12 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "jumbotron",
+      staticClass: "jumbotron pt-2",
       style: { "background-image": "url(" + _vm.image + ")" }
     },
     [
+      _vm._m(0),
+      _vm._v(" "),
       _c("div", { staticClass: "container text-left" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-12 pt-4" }, [
@@ -39524,9 +39535,21 @@ var render = function() {
             _c("p", { staticClass: "lead" }, [_vm._v(_vm._s(_vm.text))]),
             _vm._v(" "),
             _c("div", { staticClass: "get-vpn pt-5" }, [
-              _vm._m(0),
+              _vm._m(1),
               _vm._v(" "),
-              _c("p", [_c("u", [_vm._v(_vm._s(_vm.startFreeTrialText))])])
+              _c("div", [
+                _c(
+                  "a",
+                  {
+                    staticStyle: {
+                      color: "white",
+                      "text-decoration": "underline"
+                    },
+                    attrs: { href: "#" }
+                  },
+                  [_vm._v(_vm._s(_vm.startFreeTrialText))]
+                )
+              ])
             ])
           ])
         ])
@@ -39535,6 +39558,30 @@ var render = function() {
   )
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("nav", { attrs: { "aria-label": "breadcrumb" } }, [
+      _c("ol", { staticClass: "breadcrumb" }, [
+        _c("li", { staticClass: "breadcrumb-item" }, [
+          _c("a", { attrs: { href: "#" } }, [
+            _c("i", { staticClass: "fa fa-home" })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "breadcrumb-item" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("VPN Insights")])
+        ]),
+        _vm._v(" "),
+        _c(
+          "li",
+          { staticClass: "breadcrumb-item", attrs: { "aria-current": "page" } },
+          [_vm._v("Features")]
+        )
+      ])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
