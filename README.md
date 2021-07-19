@@ -4,7 +4,7 @@ In order to run, clone the repo using `git clone https://github.com/danielCriste
 
 To access the webpages, open a browser and go to 127.0.0.1:8000
 
-##Examples
+## Examples
 http://127.0.0.1:8000/austria
 
 http://127.0.0.1:8000/premier_league
