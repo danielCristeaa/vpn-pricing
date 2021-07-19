@@ -8,7 +8,12 @@ use Illuminate\Support\Facades\Http;
 
 class MainController extends Controller
 {
+    /*
+     * Method for setting cookies and calculating prices.
+     * It returns an array with the prices for one month, one year and three years
+     */
     private function setCookiesAndPrices(Request $request) {
+        //check the user's operating system and get the correct prices
         if(strpos($_SERVER['HTTP_USER_AGENT'], 'Windows') !== false) {
             $oneMonthPrice = config('vpn_prices.windows_price_one_month');
             $oneYearPrice = config('vpn_prices.windows_price_one_year');
@@ -20,17 +25,20 @@ class MainController extends Controller
             $threeYearsPrice = config('vpn_prices.linux_price_three_years');
         }
 
+        //check if query parameters contain 'source' and set the cookie if it does not already exist
         if($request->input('source') && array_key_exists('source', $_COOKIE) == false) {
             setcookie('source', $request->input('source'), 0, '/');
         }
 
+        //check if query parameters contain 'campaign' and set the cookie if it does not already exist
         if($request->input('campaign') && array_key_exists('campaign', $_COOKIE) == false) {
             setcookie('campaign', $request->input('campaign'), 0, '/');
         }
 
+        //check for 'voucher' in the query parameters and calculate the prices
         if($request->input('voucher')) {
             $queryVoucher = $request->input('voucher');
-            if(config()->has("vouchers.$queryVoucher")) {
+            if(config()->has("vouchers.$queryVoucher")) { //check if the voucher is valid
                 $oneMonthPrice = $oneMonthPrice - (config("vouchers.$queryVoucher") / 100);
                 $oneYearPrice = $oneYearPrice - (config("vouchers.$queryVoucher") / 100);
                 $threeYearsPrice = $threeYearsPrice - (config("vouchers.$queryVoucher") / 100);
@@ -41,6 +49,10 @@ class MainController extends Controller
         return [$oneMonthPrice, $oneYearPrice, $threeYearsPrice];
     }
 
+    /*
+     * Returns the 'austria' view with an array containing the text from austria_vpn_details config file
+     * and the correct prices
+     */
     public function showAustria(Request $request) {
         $prices = $this->setCookiesAndPrices($request);
 
@@ -76,6 +88,10 @@ class MainController extends Controller
 
     }
 
+    /*
+     * Returns the 'premier_league' view with an array containing the text from premier_league_vpn_details config file
+     * and the correct prices
+     */
     public function showPremierLeague(Request $request) {
         $prices = $this->setCookiesAndPrices($request);
 
@@ -114,9 +130,13 @@ class MainController extends Controller
 
     }
 
+    /*
+     * Method for getting the user's location
+     * It returns a JSON which contains the country of the user
+     */
     public function determineLocation(){
         $userIP = $_SERVER['REMOTE_ADDR'];
-        if($userIP == '127.0.0.1'){
+        if($userIP == '127.0.0.1'){ //if accessed from localhost, localhost as the country
             return response()->json(['status' => 'success', 'country' => 'localhost']);
         }
 

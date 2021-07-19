@@ -15,6 +15,7 @@ export default {
         }
     },
     mounted() {
+        //when mounted, the component will display the language, browser version and location of the user
         this.getBrowserLocale()
         this.getBrowserVersion()
         this.getLocation()
@@ -38,7 +39,7 @@ export default {
 
             this.browser = M[0]+" "+M[1]
         },
-        getLocation() {
+        getLocation() { //calls the method determineLocation from MainController
             const self = this
             axios
                 .get('/determineLocation')

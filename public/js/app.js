@@ -1861,6 +1861,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   mounted: function mounted() {
+    //when mounted, the component will display the language, browser version and location of the user
     this.getBrowserLocale();
     this.getBrowserVersion();
     this.getLocation();
@@ -1902,6 +1903,7 @@ __webpack_require__.r(__webpack_exports__);
       this.browser = M[0] + " " + M[1];
     },
     getLocation: function getLocation() {
+      //calls the method determineLocation from MainController
       var self = this;
       axios.get('/determineLocation').then(function (response) {
         if (response.data.status == "success") {
@@ -2259,7 +2261,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     this.oneYearTotalPrice = Math.round(this.one_year_price * 12);
-    this.threeYearsTotalPRice = Math.round(this.three_years_price * 12 * 3);
+    this.threeYearsTotalPRice = Math.round(this.three_years_price * 12 * 3); //adds the tooltip when hovering over the one month and one year buttons
+
     $(document).ready(function () {
       $('[rel=tooltip]').tooltip({
         html: true,

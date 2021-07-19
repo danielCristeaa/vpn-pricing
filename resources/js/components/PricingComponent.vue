@@ -91,6 +91,7 @@ export default {
         this.oneYearTotalPrice = Math.round(this.one_year_price * 12)
         this.threeYearsTotalPRice = Math.round(this.three_years_price * 12 * 3)
 
+        //adds the tooltip when hovering over the one month and one year buttons
         $(document).ready(function(){
             $('[rel=tooltip]').tooltip({
                 html: true,
