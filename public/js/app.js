@@ -2079,6 +2079,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "JumbotronComponent",
   props: ['image', 'title', 'text', 'startFreeTrialText']
@@ -2097,18 +2105,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -6903,7 +6899,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#separator[data-v-1986b5ed] {\n    width: 80px;\n    height: 4px;\n    background-color: #FFCC00;\n    margin-bottom: 10px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#separator[data-v-1986b5ed] {\r\n    width: 80px;\r\n    height: 4px;\r\n    background-color: #FFCC00;\r\n    margin-bottom: 10px;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6927,7 +6923,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.jumbotron[data-v-3378c1dc] {\n    height: 500px;\n    color: white;\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center center;\n    border-radius: 0;\n}\n.btn[data-v-3378c1dc]{\n    background-color: #FFCC00;\n}\n.get-vpn[data-v-3378c1dc] {\n    float: left;\n    display: block;\n    text-align: center;\n}\n.breadcrumb[data-v-3378c1dc] {\n    background-color: transparent;\n    padding: 2px 15px !important;\n    font-size: 12px;\n}\nli a[data-v-3378c1dc]{\n    text-decoration: none !important;\n    color: white;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.jumbotron[data-v-3378c1dc] {\n    /*height: 500px;*/\n    color: white;\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center center;\n    border-radius: 0;\n}\n.btn[data-v-3378c1dc]{\n    background-color: #FFCC00;\n}\n.get-vpn[data-v-3378c1dc] {\n    float: left;\n    display: block;\n    text-align: center;\n}\n.breadcrumb[data-v-3378c1dc] {\n    background-color: transparent;\n    padding: 2px 15px !important;\n    font-size: 12px;\n}\nli a[data-v-3378c1dc]{\n    text-decoration: none !important;\n    color: white;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39527,14 +39523,22 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "container text-left" }, [
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-12 pt-4" }, [
+          _c("div", { staticClass: "col-md-12" }, [
             _c("h1", { staticClass: "display-4 font-weight-bold" }, [
               _vm._v(_vm._s(_vm.title))
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "lead" }, [_vm._v(_vm._s(_vm.text))]),
-            _vm._v(" "),
-            _c("div", { staticClass: "get-vpn pt-5" }, [
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-6 pt-3" }, [
+            _c("p", { staticClass: "lead" }, [_vm._v(_vm._s(_vm.text))])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "get-vpn pt-5 pb-5" }, [
               _vm._m(1),
               _vm._v(" "),
               _c("div", [
@@ -39668,27 +39672,6 @@ var staticRenderFns = [
                   }
                 },
                 [_vm._v("\n                    What is VPN?\n                ")]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "dropdown-menu",
-                  attrs: { "aria-labelledby": "navbarDropdown" }
-                },
-                [
-                  _c(
-                    "a",
-                    { staticClass: "dropdown-item", attrs: { href: "#" } },
-                    [_vm._v("Action")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    { staticClass: "dropdown-item", attrs: { href: "#" } },
-                    [_vm._v("Another action")]
-                  )
-                ]
               )
             ]),
             _vm._v(" "),
@@ -39707,27 +39690,6 @@ var staticRenderFns = [
                   }
                 },
                 [_vm._v("\n                    Features\n                ")]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "dropdown-menu",
-                  attrs: { "aria-labelledby": "navbarDropdown" }
-                },
-                [
-                  _c(
-                    "a",
-                    { staticClass: "dropdown-item", attrs: { href: "#" } },
-                    [_vm._v("Action")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    { staticClass: "dropdown-item", attrs: { href: "#" } },
-                    [_vm._v("Another action")]
-                  )
-                ]
               )
             ]),
             _vm._v(" "),
@@ -39746,27 +39708,6 @@ var staticRenderFns = [
                   }
                 },
                 [_vm._v("\n                    VPN Apps\n                ")]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "dropdown-menu",
-                  attrs: { "aria-labelledby": "navbarDropdown" }
-                },
-                [
-                  _c(
-                    "a",
-                    { staticClass: "dropdown-item", attrs: { href: "#" } },
-                    [_vm._v("Action")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    { staticClass: "dropdown-item", attrs: { href: "#" } },
-                    [_vm._v("Another action")]
-                  )
-                ]
               )
             ]),
             _vm._v(" "),

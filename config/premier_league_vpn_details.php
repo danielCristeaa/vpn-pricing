@@ -3,7 +3,7 @@
 return [
     'banner_image_path' => '/assets/premier_league/premier_league_banner.png',
     'banner_title' => 'Watch Premier League football online with CyberGhost VPN',
-    'banner_text' => 'Enjoy HD quality, buffer-free streaming ',
+    'banner_text' => 'Enjoy HD quality, buffer-free streaming',
     'banner_start_free_trial' => 'Or start your free trial',
 
     'section_one_title' => 'Kick-off your stream in 3 simple steps',

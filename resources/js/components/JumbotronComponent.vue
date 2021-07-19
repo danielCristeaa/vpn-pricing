@@ -9,10 +9,18 @@
         </nav>
         <div class="container text-left">
             <div class="row">
-                <div class="col-12 pt-4">
+                <div class="col-md-12">
                     <h1 class="display-4 font-weight-bold">{{title}}</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 pt-3">
                     <p class="lead">{{text}}</p>
-                    <div class="get-vpn pt-5">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="get-vpn pt-5 pb-5">
                         <a class="btn btn-lg" href="#" role="button"><b>GET CyberGhost VPN</b></a>
                         <div>
                             <a href="#" style="color: white; text-decoration: underline;">{{startFreeTrialText}}</a>
@@ -33,7 +41,7 @@ export default {
 
 <style scoped>
 .jumbotron {
-    height: 500px;
+    /*height: 500px;*/
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
