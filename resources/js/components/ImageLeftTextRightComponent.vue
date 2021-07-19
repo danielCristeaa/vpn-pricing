@@ -1,9 +1,9 @@
 <template>
     <div class="row mr-0 pt-5 pb-5">
-        <div class="col-md-2 offset-md-1 align-self-center">
+        <div class="col-4 offset-2 col-md-2 offset-md-1 align-self-center">
             <img v-bind:src="image_path">
         </div>
-        <div class="col-md-5 offset-md-2">
+        <div class="col-10 offset-1 col-md-5 offset-md-2">
             <h3><b>{{title}}</b></h3>
             <div id="separator"></div>
             <p v-html="text"></p>

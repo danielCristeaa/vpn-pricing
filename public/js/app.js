@@ -6839,7 +6839,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#separator[data-v-0afb8d56] {\r\n    width: 80px;\r\n    height: 4px;\r\n    background-color: #FFCC00;\r\n    margin-bottom: 10px;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#separator[data-v-0afb8d56] {\n    width: 80px;\n    height: 4px;\n    background-color: #FFCC00;\n    margin-bottom: 10px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6863,7 +6863,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#separator[data-v-1986b5ed] {\r\n    width: 80px;\r\n    height: 4px;\r\n    background-color: #FFCC00;\r\n    margin-bottom: 10px;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#separator[data-v-1986b5ed] {\n    width: 80px;\n    height: 4px;\n    background-color: #FFCC00;\n    margin-bottom: 10px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6959,7 +6959,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.container[data-v-612c1eb9]{\n    text-align: center;\n}\n.title[data-v-612c1eb9] {\n    font-weight: bold;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.container[data-v-612c1eb9]{\r\n    text-align: center;\n}\n.title[data-v-612c1eb9] {\r\n    font-weight: bold;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39283,11 +39283,13 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row mr-0 pt-5 pb-5" }, [
-    _c("div", { staticClass: "col-md-2 offset-md-1 align-self-center" }, [
-      _c("img", { attrs: { src: _vm.image_path } })
-    ]),
+    _c(
+      "div",
+      { staticClass: "col-4 offset-2 col-md-2 offset-md-1 align-self-center" },
+      [_c("img", { attrs: { src: _vm.image_path } })]
+    ),
     _vm._v(" "),
-    _c("div", { staticClass: "col-md-5 offset-md-2" }, [
+    _c("div", { staticClass: "col-10 offset-1 col-md-5 offset-md-2" }, [
       _c("h3", [_c("b", [_vm._v(_vm._s(_vm.title))])]),
       _vm._v(" "),
       _c("div", { attrs: { id: "separator" } }),
@@ -39320,7 +39322,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row mr-0 pt-5 pb-5" }, [
-    _c("div", { staticClass: "col-md-5 offset-md-1" }, [
+    _c("div", { staticClass: "col-10 offset-1 col-md-5 offset-md-1" }, [
       _c("h3", [_c("b", [_vm._v(_vm._s(_vm.title))])]),
       _vm._v(" "),
       _c("div", { attrs: { id: "separator" } }),
@@ -39328,9 +39330,11 @@ var render = function() {
       _c("p", { domProps: { innerHTML: _vm._s(_vm.text) } })
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "col-md-2 offset-md-2 align-self-center" }, [
-      _c("img", { attrs: { src: _vm.image_path } })
-    ])
+    _c(
+      "div",
+      { staticClass: "col-4 offset-2 col-md-2 offset-md-2 align-self-center" },
+      [_c("img", { attrs: { src: _vm.image_path } })]
+    )
   ])
 }
 var staticRenderFns = []
