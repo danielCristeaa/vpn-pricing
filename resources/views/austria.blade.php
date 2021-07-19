@@ -29,6 +29,7 @@
         <div id="app">
             <clientinfo-component></clientinfo-component>
             <navbar-component></navbar-component>
+            <!--The content from the controller is passed to the Vue components using props--->
             <jumbotron-component
                 :title="'{{ $banner_title }}'"
                 :text="'{{$banner_text}}'"
