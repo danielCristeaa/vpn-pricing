@@ -39,9 +39,9 @@ class MainController extends Controller
         if($request->input('voucher')) {
             $queryVoucher = $request->input('voucher');
             if(config()->has("vouchers.$queryVoucher")) { //check if the voucher is valid
-                $oneMonthPrice = $oneMonthPrice - (config("vouchers.$queryVoucher") / 100) * $oneMonthPrice;
-                $oneYearPrice = $oneYearPrice - (config("vouchers.$queryVoucher") / 100) * $oneYearPrice;
-                $threeYearsPrice = $threeYearsPrice - (config("vouchers.$queryVoucher") / 100) * $threeYearsPrice;
+                $oneMonthPrice = round($oneMonthPrice - (config("vouchers.$queryVoucher") / 100) * $oneMonthPrice, 2);
+                $oneYearPrice = round($oneYearPrice - (config("vouchers.$queryVoucher") / 100) * $oneYearPrice, 2);
+                $threeYearsPrice = round($threeYearsPrice - (config("vouchers.$queryVoucher") / 100) * $threeYearsPrice, 2);
                 setcookie('voucher', $queryVoucher, 0, '/');
             }
         }
